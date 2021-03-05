@@ -1,0 +1,107 @@
+html, body {
+    background-image: url("main.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+#title {
+    height: 100px;
+    width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title h1 {
+    color: white;
+    font-family: Garamond, serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+#poga {
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 65px;
+    width: 250px;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: lightblue;
+    border-width: 5px;
+    border-style: solid;
+    vertical-align: middle;
+}
+
+#autors {
+    position:absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    width: 400px;
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+    background: white;
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#poga2 {
+    border-radius: 50%;
+}
+
+#arrow {
+    width: 100px;
+    height: 100px;
+}
+
+#title2 {
+    float: right;
+    background:rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#apraksts {
+    background:rgb(170, 170, 170);
+    width: 28%;
+    font-size: 24px;
+    color:rgb(71,82,94);
+    padding: 10px;
+    transform: translate(0%, 70%);
+}
+
+#legend {
+    height:45%;
+    width:20%;
+    background: rgba(174,174,174,0.6);
+    margin: 0;
+    position:absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
