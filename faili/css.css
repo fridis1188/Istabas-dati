@@ -5,24 +5,23 @@ html, body {
     background-attachment: fixed;
     height: 100%;
     overflow: hidden;
-}
+} /*Uzstrāda fona bildi abām lappaspusēm*/
 
 #title {
     height: 100px;
     width: 800px;
     background: rgba(0, 0, 0, 0.5);
-    margin: 0;
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} /*Lietojot position, top, left un transform atribūtu, es nolieku attiecīgo konteineri vietā, kur vēlos.*/
 
 #title h1 {
-    color: white;
-    font-family: Garamond, serif;
-    font-size: 300%;
-    text-align: center;
+    color: white; /*Nomainu tekstam krāsu*/
+    font-family: Garamond, serif; /*Nomainu tekstam fontu*/
+    font-size: 300%; /*Palielinu burtu lielumu*/
+    text-align: center; /*Nolieku tekstu pa vidu*/
 }
 
 #poga {
@@ -33,18 +32,15 @@ html, body {
     background-color: black;
     color: white;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     height: 65px;
     width: 250px;
     font-size: 18px;
-    margin: 0;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border: lightblue;
-    border-width: 5px;
-    border-style: solid;
-    vertical-align: middle;
+    border-radius: 50px; /*Pogai stūru noapaļo*/
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /*ar box-shadow atribūtu, iedodu pogai mazu ēnojumu*/
+    border: lightblue;/*Uzstādu rāmim krāsu*/
+    border-width: 5px; /*Iedodu rāmim lielumu*/
+    border-style: solid; /*Pasaku, ka rāmis ir vienkārši aizpildīts ar krāsu*/
+    cursor:pointer; /*Kad kursors uzliek uz pogas, kursors nomainās no parastās bultiņas uz ročiņu, kas parasti parādās, kad kursoru uzliek uz nospiezama elementa*/
 }
 
 #autors {
@@ -59,6 +55,7 @@ html, body {
     border: black;
     border-width: 5px;
     border-style: solid;
+    padding-left: 10px; /*Tekstu novietoju 10 pikseļus prom no kreisās malas*/
 }
 
 #main {
@@ -68,6 +65,7 @@ html, body {
 
 #poga2 {
     border-radius: 50%;
+    cursor:pointer;
 }
 
 #arrow {
@@ -82,8 +80,9 @@ html, body {
     height: 100px;
     vertical-align: middle;
     text-align: center;
-    width: 600px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 30%;
+    font-family: Verdana, Tahoma, sans-serif;
+    transform: translate(-117%,0);
 }
 
 #apraksts {
@@ -91,7 +90,7 @@ html, body {
     width: 28%;
     font-size: 24px;
     color:rgb(71,82,94);
-    padding: 10px;
+    padding: 10px; /*Teksts tiek novietots 10 pikeļus prom no visām malām*/
     transform: translate(0%, 70%);
 }
 
@@ -99,9 +98,37 @@ html, body {
     height:45%;
     width:20%;
     background: rgba(174,174,174,0.6);
-    margin: 0;
     position:absolute;
     top: 40%;
     left: 80%;
     transform: translate(-50%, -50%);
+    text-align: right; /*Teksts tiek līdzināts pie labās malas*/
+}
+.legend_color {
+    width: 40%;
+    height: 80%;
+    float: right;
+    transform: translate(-5%,5%);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#legend b {
+    font-size: 28px;
+    padding-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+}
+
+#chart {
+    height:80%;
+    width:30%;
+    margin: auto;
+    bottom: 20%;
+    position: relative;
+    background-color:grey;
+}
+
+#data {
+    font-size:larger;
 }
